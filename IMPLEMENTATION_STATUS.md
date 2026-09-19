@@ -6,18 +6,18 @@ This file is informational. `HANDOFF.md` remains authoritative.
 
 ## Flightcheck (`px4-reqcheck`)
 
-- Current phase: handoff phase Week 3
+- Current phase: handoff phase Week 4
 - Repository URL: https://github.com/Sevens-Dev/px4-reqcheck
 - Current branch: `main`
-- Latest merged PR or commit: PR #7, `Publish preregistered Week 2 measurements` (`b168cbe`)
-- Completed exit criteria: Weeks 0-2; deterministic 20-log checksum-pinned corpus; 20 logs normalized to Parquet; all seven flight metrics unit-tested; remaining data-quality checks report without dropping; five analytical SQL queries tested; two static figures generated; ingest throughput and preregistered DuckDB-versus-SQLite null result published with raw repetitions
-- Tests currently passing: 36 pytest tests; Ruff format/check; scoped strict mypy; dependency audit; gitleaks
+- Latest merged PR or commit: PR #11, `Finalize v0.1 reproduction guide` (`15e647f`); annotated tag `v0.1`
+- Completed exit criteria: Weeks 0-3; deterministic 20-log checksum-pinned corpus; 20 logs normalized to Parquet; all seven flight metrics unit-tested; data-quality findings report without dropping; five analytical SQL queries tested; ingest throughput and preregistered DuckDB-versus-SQLite null result published with raw repetitions; seven corrected requirements and ordered aliases; sentinel-safe parameter-derived thresholds; total three-valued evaluator; committed traceability matrix and Jinja2 report; byte-for-byte clean Ubuntu 24.04 reproduction in workflow run 35448528237; all three portfolio repositories pinned on the GitHub profile before the first milestone tag
+- Tests currently passing: 55 pytest tests; Ruff format/check; scoped strict mypy; dependency audit; gitleaks; clean real-corpus `make all` reproduction
 - Documented cut-order decisions: model baseline remains assumed cut by default; no never-cut item removed
 - Unresolved external blockers:
   - Local execution host is Ubuntu 26.04, not the preferred WSL2 Ubuntu 24.04 development environment; clean measurement/reproduction work uses the permitted Ubuntu 24.04 `workflow_dispatch` method
   - Outside-reviewer decision: sole authorship; no outside-review milestone is claimed or scheduled
-- Current milestone: none
-- Next unit of work: implement the seven corrected requirements, signal/parameter aliasing, sentinel-safe threshold resolver, total three-valued evaluator, coverage/traceability matrix, and generated report; tag `v0.1` only after the Week 3 exit gate passes
+- Current milestone: `v0.1`
+- Next unit of work: implement the independent C++ descent checker, GoogleTest/CMake CI job, exchange contracts, cross-language agreement gate, and timing table
 
 ## CustodyLedger (`custodyledger`)
 
